@@ -13,12 +13,15 @@ class Product {
   @HiveField(3)
   num price;
   @HiveField(4)
-  List<String?> images;
+  String thumbnail;
+  @HiveField(5)
+  List? images;
 
   Product(
       {this.id,
       required this.name,
       this.description,
       required this.price,
+      required this.thumbnail,
       required this.images});
 }
